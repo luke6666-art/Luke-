@@ -19,8 +19,6 @@
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 html,body{height:100%;overflow:hidden}
 body{font-family:'Plus Jakarta Sans',sans-serif;background:var(--bg);color:var(--ink);display:flex;flex-direction:column}
-
-/* LOGIN */
 .login-wrap{position:fixed;inset:0;background:linear-gradient(135deg,#2D2470 0%,#4C3D9E 50%,#1D7A56 100%);display:flex;align-items:center;justify-content:center;z-index:200;padding:16px}
 .login-box{background:var(--white);border-radius:20px;padding:36px 32px;max-width:400px;width:100%}
 .login-logo{width:52px;height:52px;border-radius:14px;background:var(--plum);display:flex;align-items:center;justify-content:center;margin-bottom:18px}
@@ -36,12 +34,8 @@ body{font-family:'Plus Jakarta Sans',sans-serif;background:var(--bg);color:var(-
 .login-hint{font-size:11px;color:var(--ink3);margin-top:14px;text-align:center;line-height:1.7}
 .login-hint a{color:var(--plum);cursor:pointer;text-decoration:underline}
 #demo-hint{display:none;margin-top:10px;background:var(--bg);border-radius:8px;padding:10px;font-size:11px;color:var(--ink2);line-height:1.9}
-
-/* APP */
 .app-wrap{display:none;flex-direction:column;height:100%}
 .app-wrap.on{display:flex}
-
-/* TOPBAR */
 .topbar{background:var(--white);border-bottom:1px solid var(--line);padding:0 16px;height:52px;display:flex;align-items:center;justify-content:space-between;gap:10px;flex-shrink:0}
 .brand{display:flex;align-items:center;gap:9px}
 .brand-logo{width:32px;height:32px;border-radius:9px;background:var(--plum);display:flex;align-items:center;justify-content:center;flex-shrink:0}
@@ -51,15 +45,11 @@ body{font-family:'Plus Jakarta Sans',sans-serif;background:var(--bg);color:var(-
 .user-av{width:24px;height:24px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:10px;font-weight:700}
 .logout-btn{padding:5px 10px;font-size:11px;font-family:inherit;border:1px solid var(--line);border-radius:6px;background:var(--white);cursor:pointer;color:var(--ink2);transition:all .12s;margin-left:4px}
 .logout-btn:hover{background:var(--danger-bg);color:var(--danger);border-color:var(--danger)}
-
-/* LAYOUT */
 .layout{display:flex;flex:1;overflow:hidden}
 .sidebar{width:200px;min-width:200px;background:var(--white);border-right:1px solid var(--line);display:flex;flex-direction:column;overflow-y:auto}
 @media(max-width:700px){.sidebar{display:none}}
 .main{flex:1;display:flex;flex-direction:column;overflow:hidden}
 .content{flex:1;overflow-y:auto;padding:18px 20px}
-
-/* NAV */
 .nav-label{padding:10px 14px 3px;font-size:9px;font-weight:700;color:var(--ink3);letter-spacing:.08em;text-transform:uppercase}
 .nav-btn{display:flex;align-items:center;gap:9px;width:calc(100% - 14px);margin:1px 7px;padding:8px 11px;border-radius:var(--r-sm);font-family:inherit;font-size:12px;font-weight:400;color:var(--ink2);background:none;border:none;cursor:pointer;transition:all .15s;text-align:left}
 .nav-btn:hover{background:var(--bg);color:var(--ink)}
@@ -73,18 +63,12 @@ body{font-family:'Plus Jakarta Sans',sans-serif;background:var(--bg);color:var(-
 .av{width:26px;height:26px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:10px;font-weight:700;flex-shrink:0}
 .av-p{background:var(--plum-bg);color:var(--plum)}.av-j{background:var(--jade-bg);color:var(--jade)}.av-r{background:var(--danger-bg);color:var(--danger)}
 .sdot{width:6px;height:6px;border-radius:50%;margin-left:auto}
-
-/* MOBILE TAB */
 .btab{display:none;background:var(--white);border-top:1px solid var(--line);flex-shrink:0}
 @media(max-width:700px){.btab{display:flex}}
 .btab-btn{flex:1;padding:8px 2px 6px;border:none;background:none;font-family:inherit;font-size:9px;font-weight:500;color:var(--ink3);cursor:pointer;display:flex;flex-direction:column;align-items:center;gap:3px}
 .btab-btn.on{color:var(--plum)}.btab-btn.on-s{color:var(--jade)}
 .btab-icon{width:18px;height:18px}
-
-/* VIEWS */
 .view{display:none}.view.on{display:block}
-
-/* COMPONENTS */
 .stats{display:grid;grid-template-columns:repeat(4,1fr);gap:9px;margin-bottom:14px}
 @media(max-width:500px){.stats{grid-template-columns:repeat(2,1fr)}}
 .stat{background:var(--white);border:1px solid var(--line);border-radius:var(--r);padding:13px}
@@ -163,19 +147,6 @@ hr.dv{border:none;border-top:1px solid var(--line);margin:12px 0}
 .acc-del{padding:4px 10px;font-size:11px;font-family:inherit;border:1px solid var(--line);border-radius:5px;background:none;cursor:pointer;color:var(--danger);transition:all .12s}
 .acc-del:hover{background:var(--danger-bg);border-color:var(--danger)}
 .info-box{background:var(--plum-bg);border-radius:var(--r-sm);padding:11px 13px;font-size:12px;color:var(--plum);line-height:1.7;margin-bottom:12px}
-
-/* API KEY SETUP MODAL */
-.modal-bg{position:fixed;inset:0;background:rgba(28,27,46,.6);display:flex;align-items:center;justify-content:center;z-index:300;padding:16px}
-.modal-box{background:var(--white);border-radius:16px;padding:28px 24px;max-width:420px;width:100%}
-.modal-title{font-size:16px;font-weight:600;color:var(--plum);margin-bottom:6px}
-.modal-sub{font-size:12px;color:var(--ink2);line-height:1.7;margin-bottom:16px}
-.modal-input{margin-bottom:12px}
-.modal-input label{font-size:11px;color:var(--ink3);display:block;margin-bottom:5px}
-.modal-input input{width:100%;padding:10px 12px;border:1.5px solid var(--line);border-radius:var(--r-sm);font-family:inherit;font-size:13px;color:var(--ink);background:var(--bg);outline:none}
-.modal-input input:focus{border-color:var(--plum2);background:var(--white)}
-.modal-note{font-size:11px;color:var(--ink3);line-height:1.6;margin-top:10px}
-.modal-note a{color:var(--plum)}
-
 ::-webkit-scrollbar{width:4px;height:4px}
 ::-webkit-scrollbar-track{background:transparent}
 ::-webkit-scrollbar-thumb{background:var(--line);border-radius:3px}
@@ -183,12 +154,9 @@ hr.dv{border:none;border-top:1px solid var(--line);margin:12px 0}
 </head>
 <body>
 
-<!-- LOGIN -->
 <div class="login-wrap" id="login-screen">
   <div class="login-box">
-    <div class="login-logo">
-      <svg width="26" height="26" viewBox="0 0 24 24" fill="none"><path d="M12 3L4 7v10l8 4 8-4V7L12 3z" stroke="white" stroke-width="1.5" stroke-linejoin="round"/><path d="M12 3v18M4 7l8 4 8-4" stroke="white" stroke-width="1.5" stroke-linejoin="round"/></svg>
-    </div>
+    <div class="login-logo"><svg width="26" height="26" viewBox="0 0 24 24" fill="none"><path d="M12 3L4 7v10l8 4 8-4V7L12 3z" stroke="white" stroke-width="1.5" stroke-linejoin="round"/><path d="M12 3v18M4 7l8 4 8-4" stroke="white" stroke-width="1.5" stroke-linejoin="round"/></svg></div>
     <div class="login-title">雅思一对一教学平台</div>
     <div class="login-sub">请登录你的账号继续使用</div>
     <div class="form-field"><label>用户名</label><input type="text" id="l-user" placeholder="输入用户名" onkeydown="if(event.key==='Enter')doLogin()"></div>
@@ -196,36 +164,10 @@ hr.dv{border:none;border-top:1px solid var(--line);margin:12px 0}
     <button class="login-btn" onclick="doLogin()">登录</button>
     <div class="login-err" id="login-err">用户名或密码错误，请重试</div>
     <div class="login-hint">忘记密码？请联系老师重置<br><a onclick="showDemo()">查看演示账号</a></div>
-    <div id="demo-hint">
-      <strong>演示账号：</strong><br>
-      老师：用户名 <code>teacher</code> 密码 <code>admin123</code><br>
-      学生1：用户名 <code>liming</code> 密码 <code>student123</code><br>
-      学生2：用户名 <code>zhangxue</code> 密码 <code>student123</code>
-    </div>
+    <div id="demo-hint"><strong>演示账号：</strong><br>老师：用户名 <code>teacher</code> 密码 <code>admin123</code><br>学生1：用户名 <code>liming</code> 密码 <code>student123</code><br>学生2：用户名 <code>zhangxue</code> 密码 <code>student123</code></div>
   </div>
 </div>
 
-<!-- API KEY MODAL -->
-<div class="modal-bg" id="api-modal" style="display:none">
-  <div class="modal-box">
-    <div class="modal-title">设置 API Key</div>
-    <div class="modal-sub">需要输入 Anthropic API Key 才能使用 AI 功能。只需设置一次，保存后所有 AI 功能立即可用。</div>
-    <div class="modal-input">
-      <label>Anthropic API Key</label>
-      <input type="password" id="modal-key" placeholder="sk-ant-api03-...">
-    </div>
-    <div style="display:flex;gap:8px">
-      <button class="btn btn-p" style="flex:1" onclick="saveApiKey()">保存并继续</button>
-      <button class="btn btn-o" onclick="document.getElementById('api-modal').style.display='none'">取消</button>
-    </div>
-    <div class="modal-note">
-      API Key 加密保存在你的浏览器本地，不会上传到任何地方。<br>
-      没有 Key？<a href="https://console.anthropic.com" target="_blank">点此免费注册获取</a>（约2分钟）
-    </div>
-  </div>
-</div>
-
-<!-- APP -->
 <div class="app-wrap" id="app">
   <div class="topbar">
     <div class="brand">
@@ -270,7 +212,6 @@ hr.dv{border:none;border-top:1px solid var(--line);margin:12px 0}
     <div class="main">
       <div class="content">
 
-        <!-- OVERVIEW -->
         <div class="view on" id="v-overview">
           <div class="stats">
             <div class="stat"><div class="stat-v" style="color:var(--plum)">2</div><div class="stat-l">在读学生</div></div>
@@ -294,7 +235,6 @@ hr.dv{border:none;border-top:1px solid var(--line);margin:12px 0}
           </div>
         </div>
 
-        <!-- PLAN -->
         <div class="view" id="v-plan">
           <div class="card">
             <div class="card-hd">李明 · 本周计划 <span class="badge bp">第3周/共6周</span></div>
@@ -318,7 +258,6 @@ hr.dv{border:none;border-top:1px solid var(--line);margin:12px 0}
           </div>
         </div>
 
-        <!-- ESSAY -->
         <div class="view" id="v-essay">
           <div class="g2">
             <div>
@@ -343,7 +282,6 @@ On the other hand, technology can also have disadvantage. Firstly, it can be a d
           </div>
         </div>
 
-        <!-- RESOURCES -->
         <div class="view" id="v-resources">
           <div class="card">
             <div class="card-hd">AI 生成教学资料</div>
@@ -359,7 +297,6 @@ On the other hand, technology can also have disadvantage. Firstly, it can be a d
           </div>
         </div>
 
-        <!-- ACCOUNTS -->
         <div class="view" id="v-accounts">
           <div class="card">
             <div class="card-hd">学生账号管理</div>
@@ -373,14 +310,6 @@ On the other hand, technology can also have disadvantage. Firstly, it can be a d
             <div id="acc-msg" style="margin-top:8px;font-size:12px"></div>
           </div>
           <div class="card">
-            <div class="card-hd">AI 设置</div>
-            <div class="info-box">API Key 用于驱动所有 AI 功能（批改、答疑、生成计划等）。学生无需知道 Key，由老师统一设置。</div>
-            <button class="btn btn-p" onclick="document.getElementById('modal-key').value='';document.getElementById('api-modal').style.display='flex'">
-              更新 API Key
-            </button>
-            <div id="key-status" style="margin-top:8px;font-size:12px;color:var(--jade)"></div>
-          </div>
-          <div class="card">
             <div class="card-hd">修改老师密码</div>
             <div class="fl c2"><div><label>新密码</label><input type="password" id="t-newpass" placeholder="输入新密码（至少6位）"></div><div><label>确认密码</label><input type="password" id="t-confirm" placeholder="再次输入"></div></div>
             <button class="btn btn-o" onclick="changeTeacherPass()">更新密码</button>
@@ -388,7 +317,6 @@ On the other hand, technology can also have disadvantage. Firstly, it can be a d
           </div>
         </div>
 
-        <!-- TODAY -->
         <div class="view" id="v-today">
           <div class="g2">
             <div>
@@ -414,7 +342,6 @@ On the other hand, technology can also have disadvantage. Firstly, it can be a d
           </div>
         </div>
 
-        <!-- WRITING -->
         <div class="view" id="v-writing">
           <div class="g2">
             <div>
@@ -433,7 +360,6 @@ On the other hand, technology can also have disadvantage. Firstly, it can be a d
           </div>
         </div>
 
-        <!-- SPEAKING -->
         <div class="view" id="v-speaking">
           <div class="g2">
             <div>
@@ -454,14 +380,13 @@ On the other hand, technology can also have disadvantage. Firstly, it can be a d
               <div class="card-hd" id="sp-title">口语 AI 反馈</div>
               <div id="sp-out"><div class="empty">选择话题开始练习</div></div>
               <div id="sp-in" style="display:none;margin-top:10px">
-                <textarea id="sp-ans" rows="5" placeholder="用英文输入你的口语回答，AI 将从流利度、词汇、语法、内容四维度给你反馈..."></textarea>
+                <textarea id="sp-ans" rows="5" placeholder="用英文输入你的口语回答..."></textarea>
                 <button class="btn btn-j" style="margin-top:8px;width:100%" onclick="spFeedback()">获取 AI 反馈</button>
               </div>
             </div>
           </div>
         </div>
 
-        <!-- QA -->
         <div class="view" id="v-qa">
           <div class="card" style="max-width:680px">
             <div class="card-hd">AI 答疑助手</div>
@@ -486,45 +411,38 @@ On the other hand, technology can also have disadvantage. Firstly, it can be a d
     </div>
   </div>
 
-  <!-- MOBILE TABS -->
   <div class="btab" id="btab-t">
     <button class="btab-btn on" onclick="go('overview')"><svg class="btab-icon" viewBox="0 0 16 16" fill="none"><rect x="1" y="1" width="6" height="6" rx="1.5" fill="currentColor"/><rect x="9" y="9" width="6" height="6" rx="1.5" fill="currentColor"/></svg>总览</button>
-    <button class="btab-btn" onclick="go('plan')"><svg class="btab-icon" viewBox="0 0 16 16" fill="none"><rect x="2" y="2" width="12" height="12" rx="2" stroke="currentColor" stroke-width="1.2"/><line x1="5" y1="7" x2="11" y2="7" stroke="currentColor"/></svg>计划</button>
+    <button class="btab-btn" onclick="go('plan')"><svg class="btab-icon" viewBox="0 0 16 16" fill="none"><rect x="2" y="2" width="12" height="12" rx="2" stroke="currentColor" stroke-width="1.2"/></svg>计划</button>
     <button class="btab-btn" onclick="go('essay')"><svg class="btab-icon" viewBox="0 0 16 16" fill="none"><path d="M3 2h10v12H3z" stroke="currentColor" stroke-width="1.2"/></svg>批改</button>
     <button class="btab-btn" onclick="go('resources')"><svg class="btab-icon" viewBox="0 0 16 16" fill="none"><rect x="2" y="3" width="12" height="10" rx="1.5" stroke="currentColor" stroke-width="1.2"/></svg>资料</button>
     <button class="btab-btn" onclick="go('accounts')"><svg class="btab-icon" viewBox="0 0 16 16" fill="none"><circle cx="8" cy="5" r="3" stroke="currentColor" stroke-width="1.2"/><path d="M2 13c0-3 2.5-5 6-5s6 2 6 5" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/></svg>账号</button>
   </div>
   <div class="btab" id="btab-s" style="display:none">
-    <button class="btab-btn" onclick="go('today')"><svg class="btab-icon" viewBox="0 0 16 16" fill="none"><circle cx="8" cy="8" r="6" stroke="currentColor" stroke-width="1.2"/><path d="M8 5v3l2 2" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/></svg>今日</button>
+    <button class="btab-btn" onclick="go('today')"><svg class="btab-icon" viewBox="0 0 16 16" fill="none"><circle cx="8" cy="8" r="6" stroke="currentColor" stroke-width="1.2"/></svg>今日</button>
     <button class="btab-btn" onclick="go('writing')"><svg class="btab-icon" viewBox="0 0 16 16" fill="none"><path d="M3 12L4 9l7-7 3 3-7 7-3 1z" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round"/></svg>写作</button>
-    <button class="btab-btn" onclick="go('speaking')"><svg class="btab-icon" viewBox="0 0 16 16" fill="none"><rect x="5" y="2" width="6" height="9" rx="3" stroke="currentColor" stroke-width="1.2"/><path d="M3 9c0 2.8 10 2.8 10 0" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/></svg>口语</button>
+    <button class="btab-btn" onclick="go('speaking')"><svg class="btab-icon" viewBox="0 0 16 16" fill="none"><rect x="5" y="2" width="6" height="9" rx="3" stroke="currentColor" stroke-width="1.2"/></svg>口语</button>
     <button class="btab-btn" onclick="go('qa')"><svg class="btab-icon" viewBox="0 0 16 16" fill="none"><path d="M2 3h12v9H9l-3 3v-3H2z" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round"/></svg>答疑</button>
   </div>
 </div>
 
 <script>
-// ═══ CORS PROXY — 解决跨域问题 ═══
-// 使用 allorigins 代理转发 Anthropic API 请求，无需注册任何服务
-var PROXY = 'https://api.allorigins.win/raw?url=';
-var API_URL = 'https://api.anthropic.com/v1/messages';
-
-// ═══ ACCOUNTS ═══
-var DEFAULT_ACCOUNTS = {
-  teacher:  { password:'admin123',   role:'teacher', name:'王老师', apiKey:'' },
-  liming:   { password:'student123', role:'student', name:'李明',   target:'Band 7',   days:42 },
-  zhangxue: { password:'student123', role:'student', name:'张雪',   target:'Band 6.5', days:28 }
+// ═══ 账号系统 ═══
+var DEFAULT_ACCOUNTS={
+  teacher:{password:'admin123',role:'teacher',name:'王老师'},
+  liming:{password:'student123',role:'student',name:'李明',target:'Band 7',days:42},
+  zhangxue:{password:'student123',role:'student',name:'张雪',target:'Band 6.5',days:28}
 };
-function getAccs(){ var s=localStorage.getItem('ielts_accs'); if(!s){localStorage.setItem('ielts_accs',JSON.stringify(DEFAULT_ACCOUNTS));return DEFAULT_ACCOUNTS;} return JSON.parse(s); }
-function saveAccs(a){ localStorage.setItem('ielts_accs',JSON.stringify(a)); }
+function getAccs(){var s=localStorage.getItem('ielts_accs');if(!s){localStorage.setItem('ielts_accs',JSON.stringify(DEFAULT_ACCOUNTS));return DEFAULT_ACCOUNTS;}return JSON.parse(s);}
+function saveAccs(a){localStorage.setItem('ielts_accs',JSON.stringify(a));}
 
-var currentUser=null, qaMsgs=[], pendingCb=null;
+var currentUser=null,qaMsgs=[];
 
-// ═══ LOGIN ═══
 function doLogin(){
   var u=document.getElementById('l-user').value.trim().toLowerCase();
   var p=document.getElementById('l-pass').value;
-  var accs=getAccs(), err=document.getElementById('login-err');
-  if(!accs[u]||accs[u].password!==p){ err.style.display='block'; document.getElementById('l-pass').value=''; return; }
+  var accs=getAccs(),err=document.getElementById('login-err');
+  if(!accs[u]||accs[u].password!==p){err.style.display='block';document.getElementById('l-pass').value='';return;}
   err.style.display='none';
   currentUser={username:u,...accs[u]};
   localStorage.setItem('ielts_sess',JSON.stringify({username:u}));
@@ -532,7 +450,6 @@ function doLogin(){
 }
 
 function enterApp(){
-  var accs=getAccs(), acc=accs[currentUser.username];
   var isT=currentUser.role==='teacher';
   document.getElementById('login-screen').style.display='none';
   document.getElementById('app').classList.add('on');
@@ -547,248 +464,156 @@ function enterApp(){
   document.getElementById('ts-list').style.display=isT?'':'none';
   document.getElementById('btab-t').style.display=isT?'flex':'none';
   document.getElementById('btab-s').style.display=isT?'none':'flex';
-  if(!isT){ document.getElementById('chat-welcome').textContent=currentUser.name+'，你好！我是你的雅思 AI 助教。目标 '+(currentUser.target||'')+' 距考试 '+(currentUser.days||'')+'天，有任何问题都可以问我！'; }
+  if(!isT){document.getElementById('chat-welcome').textContent=currentUser.name+'，你好！目标 '+(currentUser.target||'')+' 距考试 '+(currentUser.days||'')+'天，有任何问题都可以问我！';}
   go(isT?'overview':'today');
-  if(isT){ renderAccList(); checkKeyStatus(); }
+  if(isT)renderAccList();
 }
 
 function doLogout(){
-  localStorage.removeItem('ielts_sess'); currentUser=null; qaMsgs=[];
+  localStorage.removeItem('ielts_sess');currentUser=null;qaMsgs=[];
   document.getElementById('app').classList.remove('on');
   document.getElementById('login-screen').style.display='flex';
-  document.getElementById('l-user').value=''; document.getElementById('l-pass').value='';
+  document.getElementById('l-user').value='';document.getElementById('l-pass').value='';
 }
+function showDemo(){var d=document.getElementById('demo-hint');d.style.display=d.style.display==='none'?'block':'none';}
 
-function showDemo(){ var d=document.getElementById('demo-hint'); d.style.display=d.style.display==='none'?'block':'none'; }
+(function(){
+  var s=localStorage.getItem('ielts_sess');
+  if(s){var j=JSON.parse(s),accs=getAccs();if(accs[j.username]){currentUser={username:j.username,...accs[j.username]};enterApp();}}
+})();
 
-// Auto login
-(function(){ var s=localStorage.getItem('ielts_sess'); if(s){ var j=JSON.parse(s), accs=getAccs(); if(accs[j.username]){ currentUser={username:j.username,...accs[j.username]}; enterApp(); } } })();
-
-// ═══ API KEY ═══
-function getApiKey(){ var accs=getAccs(); return (accs.teacher&&accs.teacher.apiKey)||''; }
-
-function saveApiKey(){
-  var k=document.getElementById('modal-key').value.trim();
-  if(!k||!k.startsWith('sk-')){ alert('请输入有效的 API Key（以 sk- 开头）'); return; }
-  var accs=getAccs(); accs.teacher.apiKey=k; saveAccs(accs);
-  document.getElementById('api-modal').style.display='none';
-  checkKeyStatus();
-  if(pendingCb){ var cb=pendingCb; pendingCb=null; cb(); }
-}
-
-function checkKeyStatus(){
-  var k=getApiKey(), el=document.getElementById('key-status');
-  if(k) el.textContent='✓ API Key 已设置（末尾：...'+k.slice(-6)+'）';
-  else el.style.color='var(--gold)', el.textContent='⚠ 尚未设置 API Key，AI 功能不可用';
-}
-
-// ═══ NAVIGATION ═══
 function go(page){
   document.querySelectorAll('.view').forEach(v=>v.classList.remove('on'));
-  var el=document.getElementById('v-'+page); if(el)el.classList.add('on');
-  var isT=currentUser&&currentUser.role==='teacher', cls=isT?'on':'on-s';
-  document.querySelectorAll('.nav-btn').forEach(b=>{ b.classList.remove('on','on-s'); if((b.getAttribute('onclick')||'').includes("'"+page+"'"))b.classList.add(cls); });
-  document.querySelectorAll('.btab-btn').forEach(b=>{ b.classList.remove('on','on-s'); if((b.getAttribute('onclick')||'').includes("'"+page+"'"))b.classList.add(isT?'on':'on-s'); });
+  var el=document.getElementById('v-'+page);if(el)el.classList.add('on');
+  var isT=currentUser&&currentUser.role==='teacher',cls=isT?'on':'on-s';
+  document.querySelectorAll('.nav-btn').forEach(b=>{b.classList.remove('on','on-s');if((b.getAttribute('onclick')||'').includes("'"+page+"'"))b.classList.add(cls);});
+  document.querySelectorAll('.btab-btn').forEach(b=>{b.classList.remove('on','on-s');if((b.getAttribute('onclick')||'').includes("'"+page+"'"))b.classList.add(isT?'on':'on-s');});
 }
+function selS(el){document.querySelectorAll('.s-item').forEach(e=>e.classList.remove('sel'));el.classList.add('sel');}
+function ck(el){el.classList.toggle('tdone');var c=el.querySelector('.tc');if(el.classList.contains('tdone')){c.classList.add('done');c.textContent='✓';}else{c.classList.remove('done');c.textContent='';}}
+function toggleEdit(){var e=document.getElementById('essay-body'),b=document.getElementById('edit-btn');if(e.contentEditable==='true'){e.contentEditable='false';b.textContent='编辑作文';}else{e.contentEditable='true';e.focus();b.textContent='完成编辑';}}
 
-function selS(el){ document.querySelectorAll('.s-item').forEach(e=>e.classList.remove('sel')); el.classList.add('sel'); }
-function ck(el){ el.classList.toggle('tdone'); var c=el.querySelector('.tc'); if(el.classList.contains('tdone')){c.classList.add('done');c.textContent='✓';}else{c.classList.remove('done');c.textContent='';} }
-function toggleEdit(){ var e=document.getElementById('essay-body'),b=document.getElementById('edit-btn'); if(e.contentEditable==='true'){e.contentEditable='false';b.textContent='编辑作文';}else{e.contentEditable='true';e.focus();b.textContent='完成编辑';} }
-
-// ═══ ACCOUNT MANAGEMENT ═══
 function renderAccList(){
-  var accs=getAccs(), el=document.getElementById('acc-list');
+  var accs=getAccs(),el=document.getElementById('acc-list');
   var students=Object.entries(accs).filter(([k,v])=>v.role==='student');
-  if(!students.length){ el.innerHTML='<div class="empty" style="padding:16px 0">还没有学生账号，在下方添加</div>'; return; }
-  el.innerHTML=students.map(([k,v])=>`<div class="acc-row"><div class="av av-p">${v.name.charAt(0)}</div><div class="acc-info"><div class="acc-name">${v.name}</div><div class="acc-meta">用户名：${k} · 密码：${'*'.repeat(v.password.length)} · 目标：${v.target||'未设置'} · 距考试：${v.days||'—'}天</div></div><button class="acc-del" onclick="delAcc('${k}')">删除</button></div>`).join('');
+  if(!students.length){el.innerHTML='<div class="empty" style="padding:16px 0">还没有学生账号，在下方添加</div>';return;}
+  el.innerHTML=students.map(([k,v])=>`<div class="acc-row"><div class="av av-p">${v.name.charAt(0)}</div><div class="acc-info"><div class="acc-name">${v.name}</div><div class="acc-meta">用户名：${k} · 目标：${v.target||'未设置'} · 距考试：${v.days||'—'}天</div></div><button class="acc-del" onclick="delAcc('${k}')">删除</button></div>`).join('');
 }
-
 function addAccount(){
-  var name=document.getElementById('new-name').value.trim();
-  var user=document.getElementById('new-user').value.trim().toLowerCase();
-  var pass=document.getElementById('new-pass').value;
-  var target=document.getElementById('new-target').value.trim();
-  var days=document.getElementById('new-days').value.trim();
-  var msg=document.getElementById('acc-msg');
-  if(!name||!user||!pass){ msg.style.color='var(--danger)'; msg.textContent='请填写姓名、用户名和密码'; return; }
-  if(!/^[a-z0-9_]+$/.test(user)){ msg.style.color='var(--danger)'; msg.textContent='用户名只能包含小写字母、数字和下划线'; return; }
+  var name=document.getElementById('new-name').value.trim(),user=document.getElementById('new-user').value.trim().toLowerCase(),pass=document.getElementById('new-pass').value,target=document.getElementById('new-target').value.trim(),days=document.getElementById('new-days').value.trim(),msg=document.getElementById('acc-msg');
+  if(!name||!user||!pass){msg.style.color='var(--danger)';msg.textContent='请填写姓名、用户名和密码';return;}
   var accs=getAccs();
-  if(accs[user]){ msg.style.color='var(--danger)'; msg.textContent='用户名已存在，请换一个'; return; }
+  if(accs[user]){msg.style.color='var(--danger)';msg.textContent='用户名已存在';return;}
   accs[user]={password:pass,role:'student',name:name,target:target,days:parseInt(days)||60};
   saveAccs(accs);
-  msg.style.color='var(--jade)'; msg.textContent='✓ 学生「'+name+'」账号创建成功！用户名：'+user;
-  document.getElementById('new-name').value=''; document.getElementById('new-user').value='';
-  document.getElementById('new-pass').value=''; document.getElementById('new-target').value=''; document.getElementById('new-days').value='';
+  msg.style.color='var(--jade)';msg.textContent='✓ 账号「'+name+'」创建成功！用户名：'+user;
+  document.getElementById('new-name').value='';document.getElementById('new-user').value='';document.getElementById('new-pass').value='';document.getElementById('new-target').value='';document.getElementById('new-days').value='';
   renderAccList();
 }
-
-function delAcc(k){
-  if(!confirm('确定删除学生「'+k+'」的账号？此操作不可恢复')) return;
-  var accs=getAccs(); delete accs[k]; saveAccs(accs); renderAccList();
-}
-
+function delAcc(k){if(!confirm('确定删除「'+k+'」的账号？'))return;var accs=getAccs();delete accs[k];saveAccs(accs);renderAccList();}
 function changeTeacherPass(){
-  var np=document.getElementById('t-newpass').value, cp=document.getElementById('t-confirm').value, msg=document.getElementById('tpass-msg');
-  if(!np||np.length<6){ msg.style.color='var(--danger)'; msg.textContent='密码至少6位'; return; }
-  if(np!==cp){ msg.style.color='var(--danger)'; msg.textContent='两次密码不一致'; return; }
-  var accs=getAccs(); accs.teacher.password=np; saveAccs(accs);
-  msg.style.color='var(--jade)'; msg.textContent='✓ 密码已更新';
-  document.getElementById('t-newpass').value=''; document.getElementById('t-confirm').value='';
+  var np=document.getElementById('t-newpass').value,cp=document.getElementById('t-confirm').value,msg=document.getElementById('tpass-msg');
+  if(!np||np.length<6){msg.style.color='var(--danger)';msg.textContent='密码至少6位';return;}
+  if(np!==cp){msg.style.color='var(--danger)';msg.textContent='两次密码不一致';return;}
+  var accs=getAccs();accs.teacher.password=np;saveAccs(accs);
+  msg.style.color='var(--jade)';msg.textContent='✓ 密码已更新';
+  document.getElementById('t-newpass').value='';document.getElementById('t-confirm').value='';
 }
 
-// ═══ CLAUDE API (via CORS proxy) ═══
-function esc(s){ return s.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;'); }
-function setTh(el){ el.innerHTML='<div class="msg msg-ai"><div class="dots"><div class="dp"></div><div class="dp"></div><div class="dp"></div></div></div>'; }
+// ═══ 核心：通过 Vercel 后端调用 Claude ═══
+function esc(s){return s.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');}
+function setTh(el){el.innerHTML='<div class="msg msg-ai"><div class="dots"><div class="dp"></div><div class="dp"></div><div class="dp"></div></div></div>';}
 
-async function callClaude(sys, usr){
-  var key = getApiKey();
-  // If no key, show modal and pause
-  if(!key){
-    return new Promise((resolve, reject)=>{
-      pendingCb = async ()=>{
-        try{ resolve(await callClaude(sys,usr)); }catch(e){ reject(e); }
-      };
-      document.getElementById('modal-key').value='';
-      document.getElementById('api-modal').style.display='flex';
-    });
-  }
-
-  // Use allorigins proxy to bypass CORS
-  var body = JSON.stringify({
-    model:'claude-sonnet-4-20250514',
-    max_tokens:1000,
-    system:sys,
-    messages:[{role:'user',content:usr}]
+async function callClaude(system, user){
+  // 调用 /api/chat — Vercel 后端函数，不会有跨域问题
+  const res = await fetch('/api/chat', {
+    method: 'POST',
+    headers: {'Content-Type':'application/json'},
+    body: JSON.stringify({
+      model: 'claude-sonnet-4-20250514',
+      max_tokens: 1000,
+      system: system,
+      messages: [{role:'user', content:user}]
+    })
   });
-
-  // Try direct first, fall back to proxy
-  try {
-    var res = await fetch(API_URL, {
-      method:'POST',
-      headers:{'Content-Type':'application/json','x-api-key':key,'anthropic-version':'2023-06-01'},
-      body: body
-    });
-    var d = await res.json();
-    if(d.error) throw new Error(d.error.message);
-    return d.content.map(b=>b.text||'').join('');
-  } catch(e) {
-    // CORS error — use proxy
-    var proxyUrl = PROXY + encodeURIComponent(API_URL);
-    var res2 = await fetch(proxyUrl, {
-      method:'POST',
-      headers:{
-        'Content-Type':'application/json',
-        'x-api-key':key,
-        'anthropic-version':'2023-06-01'
-      },
-      body: body
-    });
-    var d2 = await res2.json();
-    if(d2.error){
-      if(d2.error.type==='authentication_error'){
-        var accs=getAccs(); accs.teacher.apiKey=''; saveAccs(accs);
-        throw new Error('API Key 无效，请在「账号管理」→「AI 设置」中重新输入');
-      }
-      throw new Error(d2.error.message);
-    }
-    return d2.content.map(b=>b.text||'').join('');
-  }
+  const data = await res.json();
+  if(data.error) throw new Error(data.error.message || JSON.stringify(data.error));
+  return data.content.map(b=>b.text||'').join('');
 }
 
-async function ai(prompt, outId){
-  var el=document.getElementById(outId); setTh(el);
-  try{ var t=await callClaude('你是专业的雅思教学助手，用中文回答，简洁专业。',prompt); el.innerHTML='<div class="ai-out">'+esc(t)+'</div>'; }
-  catch(e){ el.innerHTML='<div class="ai-err">'+esc(e.message)+'</div>'; }
+async function ai(prompt,outId){
+  var el=document.getElementById(outId);setTh(el);
+  try{var t=await callClaude('你是专业的雅思教学助手，用中文回答，简洁专业。',prompt);el.innerHTML='<div class="ai-out">'+esc(t)+'</div>';}
+  catch(e){el.innerHTML='<div class="ai-err">'+esc(e.message)+'</div>';}
 }
-
 async function genPlan(){
-  var n=document.getElementById('p-n').value, t=document.getElementById('p-t').value, w=document.getElementById('p-w').value, d=document.getElementById('p-d').value;
-  var el=document.getElementById('plan-out'); setTh(el);
-  try{ var r=await callClaude('你是专业的雅思培训老师，生成结构清晰的周计划，用中文，每天任务具体可执行。',`为学生${n}生成本周（周一到周五）雅思学习计划。目标：${t}分，弱项：${w}，距考试：${d}天。按天列出，每天2-3个具体任务。`); el.innerHTML='<div class="ai-out">'+esc(r)+'</div>'; }
-  catch(e){ el.innerHTML='<div class="ai-err">'+esc(e.message)+'</div>'; }
+  var n=document.getElementById('p-n').value,t=document.getElementById('p-t').value,w=document.getElementById('p-w').value,d=document.getElementById('p-d').value;
+  var el=document.getElementById('plan-out');setTh(el);
+  try{var r=await callClaude('你是专业的雅思培训老师，生成结构清晰的周计划，用中文，每天任务具体可执行。',`为学生${n}生成本周（周一到周五）雅思学习计划。目标：${t}分，弱项：${w}，距考试：${d}天。按天列出，每天2-3个具体任务。`);el.innerHTML='<div class="ai-out">'+esc(r)+'</div>';}
+  catch(e){el.innerHTML='<div class="ai-err">'+esc(e.message)+'</div>';}
 }
-
 async function markEssay(){
-  var essay=document.getElementById('essay-body').innerText, el=document.getElementById('essay-out'); setTh(el);
-  try{ var r=await callClaude('你是雅思考官级写作批改老师，用中文，语气专业具有建设性。',`批改以下雅思Task 2作文，四维评分（0-9分）并给详细建议：\n\n${essay}\n\n格式：\n【评分】TA:X | CC:X | LR:X | GRA:X | 综合:X\n【主要问题】（3点）\n【修改建议】\n【示范改句】`); el.innerHTML='<div class="ai-out">'+esc(r)+'</div>'; }
-  catch(e){ el.innerHTML='<div class="ai-err">'+esc(e.message)+'</div>'; }
+  var essay=document.getElementById('essay-body').innerText,el=document.getElementById('essay-out');setTh(el);
+  try{var r=await callClaude('你是雅思考官级写作批改老师，用中文，语气专业具有建设性。',`批改以下雅思Task 2作文，四维评分（0-9分）并给详细建议：\n\n${essay}\n\n格式：\n【评分】TA:X | CC:X | LR:X | GRA:X | 综合:X\n【主要问题】（3点）\n【修改建议】\n【示范改句】`);el.innerHTML='<div class="ai-out">'+esc(r)+'</div>';}
+  catch(e){el.innerHTML='<div class="ai-err">'+esc(e.message)+'</div>';}
 }
-
 async function markNew(){
-  var s=document.getElementById('ne-s').value, t=document.getElementById('ne-t').value, g=document.getElementById('ne-g').value, txt=document.getElementById('ne-txt').value;
+  var s=document.getElementById('ne-s').value,t=document.getElementById('ne-t').value,g=document.getElementById('ne-g').value,txt=document.getElementById('ne-txt').value;
   if(!txt.trim()){alert('请先粘贴作文内容');return;}
-  var el=document.getElementById('ne-out'); setTh(el);
-  try{ var r=await callClaude('你是专业的雅思写作批改老师，用中文给详细反馈。',`批改学生${s}的雅思${t}作文（目标${g}分），TA/CC/LR/GRA四维评分并给具体建议：\n\n${txt}`); el.innerHTML='<div class="ai-out">'+esc(r)+'</div>'; }
-  catch(e){ el.innerHTML='<div class="ai-err">'+esc(e.message)+'</div>'; }
+  var el=document.getElementById('ne-out');setTh(el);
+  try{var r=await callClaude('你是专业的雅思写作批改老师，用中文给详细反馈。',`批改学生${s}的雅思${t}作文（目标${g}分），TA/CC/LR/GRA四维评分并给具体建议：\n\n${txt}`);el.innerHTML='<div class="ai-out">'+esc(r)+'</div>';}
+  catch(e){el.innerHTML='<div class="ai-err">'+esc(e.message)+'</div>';}
 }
-
 async function studentMark(){
-  var t=document.getElementById('sw-t').value, txt=document.getElementById('sw-txt').value;
+  var t=document.getElementById('sw-t').value,txt=document.getElementById('sw-txt').value;
   if(!txt.trim()){alert('请先粘贴作文内容');return;}
-  var el=document.getElementById('sw-out'); setTh(el);
-  try{ var r=await callClaude('你是专业的雅思写作老师，用中文批改，语气鼓励，指出问题给改进方向。',`批改以下雅思${t}作文，给TA/CC/LR/GRA评分和详细建议：\n\n${txt}`); el.innerHTML='<div class="ai-out">'+esc(r)+'</div>'; }
-  catch(e){ el.innerHTML='<div class="ai-err">'+esc(e.message)+'</div>'; }
+  var el=document.getElementById('sw-out');setTh(el);
+  try{var r=await callClaude('你是专业的雅思写作老师，用中文批改，语气鼓励。',`批改以下雅思${t}作文，给TA/CC/LR/GRA评分和详细建议：\n\n${txt}`);el.innerHTML='<div class="ai-out">'+esc(r)+'</div>';}
+  catch(e){el.innerHTML='<div class="ai-err">'+esc(e.message)+'</div>';}
 }
-
 async function genRes(p){
-  var el=document.getElementById('res-out'); setTh(el);
-  try{ var r=await callClaude('你是专业的雅思教师，生成高质量教学资料，用中文，格式清晰。','请生成：'+p); el.innerHTML='<div class="ai-out">'+esc(r)+'</div>'; }
-  catch(e){ el.innerHTML='<div class="ai-err">'+esc(e.message)+'</div>'; }
+  var el=document.getElementById('res-out');setTh(el);
+  try{var r=await callClaude('你是专业的雅思教师，生成高质量教学资料，用中文，格式清晰。','请生成：'+p);el.innerHTML='<div class="ai-out">'+esc(r)+'</div>';}
+  catch(e){el.innerHTML='<div class="ai-err">'+esc(e.message)+'</div>';}
 }
-
 async function speakDemo(){
   document.getElementById('sp-title').textContent='Part 2 示范答案';
   document.getElementById('sp-in').style.display='block';
-  var el=document.getElementById('sp-out'); setTh(el);
-  try{ var r=await callClaude('你是雅思口语考官，先给Band 7+英文示范答案，再用中文分析关键亮点。','Give a Band 7+ model answer for: "Describe a person you admire". Then analyze key features in Chinese.'); el.innerHTML='<div class="ai-out">'+esc(r)+'</div>'; }
-  catch(e){ el.innerHTML='<div class="ai-err">'+esc(e.message)+'</div>'; }
+  var el=document.getElementById('sp-out');setTh(el);
+  try{var r=await callClaude('你是雅思口语考官，先给Band 7+英文示范答案，再用中文分析关键亮点。','Give a Band 7+ model answer for: "Describe a person you admire". Then analyze key features in Chinese.');el.innerHTML='<div class="ai-out">'+esc(r)+'</div>';}
+  catch(e){el.innerHTML='<div class="ai-err">'+esc(e.message)+'</div>';}
 }
-
 function speakP3(){
   document.getElementById('sp-title').textContent='Part 3 模拟练习';
   document.getElementById('sp-in').style.display='block';
   document.getElementById('sp-ans').placeholder='用英文回答：Do you think it is important for young people to have role models?';
   document.getElementById('sp-out').innerHTML='<div style="background:var(--jade-bg);border-radius:var(--r-sm);padding:11px;font-size:12px;color:var(--jade)">请在下方用英文回答，然后点击获取 AI 反馈</div>';
 }
-
 async function spFeedback(){
   var ans=document.getElementById('sp-ans').value;
   if(!ans.trim()){alert('请先输入你的口语回答');return;}
-  var el=document.getElementById('sp-out'); setTh(el);
-  try{ var r=await callClaude('你是专业的雅思口语考官，用中文给出评分反馈。',`评估以下雅思口语回答，从流利度、词汇、语法、内容四维度用中文给详细反馈并预测分段：\n\n${ans}`); el.innerHTML='<div class="ai-out">'+esc(r)+'</div>'; }
-  catch(e){ el.innerHTML='<div class="ai-err">'+esc(e.message)+'</div>'; }
+  var el=document.getElementById('sp-out');setTh(el);
+  try{var r=await callClaude('你是专业的雅思口语考官，用中文给出评分反馈。',`评估以下雅思口语回答，从流利度、词汇、语法、内容四维度用中文给详细反馈并预测分段：\n\n${ans}`);el.innerHTML='<div class="ai-out">'+esc(r)+'</div>';}
+  catch(e){el.innerHTML='<div class="ai-err">'+esc(e.message)+'</div>';}
 }
 
-// ═══ QA CHAT ═══
 async function sendQA(){
-  var inp=document.getElementById('qa-in'), msg=inp.value.trim(); if(!msg)return;
+  var inp=document.getElementById('qa-in'),msg=inp.value.trim();if(!msg)return;
   var wrap=document.getElementById('chat');
-  var ud=document.createElement('div'); ud.className='msg msg-user'; ud.textContent=msg; wrap.appendChild(ud);
-  inp.value=''; qaMsgs.push({role:'user',content:msg});
-  var bubble=document.createElement('div'); bubble.className='msg msg-ai';
+  var ud=document.createElement('div');ud.className='msg msg-user';ud.textContent=msg;wrap.appendChild(ud);
+  inp.value='';qaMsgs.push({role:'user',content:msg});
+  var bubble=document.createElement('div');bubble.className='msg msg-ai';
   bubble.innerHTML='<div class="dots"><div class="dp"></div><div class="dp"></div><div class="dp"></div></div>';
-  wrap.appendChild(bubble); wrap.scrollTop=wrap.scrollHeight;
+  wrap.appendChild(bubble);wrap.scrollTop=wrap.scrollHeight;
   try{
-    var key=getApiKey();
-    if(!key){ bubble.textContent='请联系老师在「账号管理」中设置 API Key 后才能使用 AI 答疑'; bubble.style.background='var(--gold-bg)'; bubble.style.color='var(--gold)'; return; }
-    // Try direct, fallback to proxy
-    var body=JSON.stringify({model:'claude-sonnet-4-20250514',max_tokens:1000,system:'你是专业的雅思教学助手。用中文回答学生备考问题，解释清晰，多举例子。',messages:qaMsgs});
-    var d;
-    try{
-      var r=await fetch(API_URL,{method:'POST',headers:{'Content-Type':'application/json','x-api-key':key,'anthropic-version':'2023-06-01'},body});
-      d=await r.json();
-    }catch(e){
-      var r2=await fetch(PROXY+encodeURIComponent(API_URL),{method:'POST',headers:{'Content-Type':'application/json','x-api-key':key,'anthropic-version':'2023-06-01'},body});
-      d=await r2.json();
-    }
-    if(d.error)throw new Error(d.error.message);
+    const res=await fetch('/api/chat',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({model:'claude-sonnet-4-20250514',max_tokens:1000,system:'你是专业的雅思教学助手。用中文回答学生备考问题，解释清晰，多举例子。',messages:qaMsgs})});
+    const d=await res.json();if(d.error)throw new Error(d.error.message||JSON.stringify(d.error));
     var t=d.content.map(b=>b.text||'').join('');
-    bubble.textContent=t; qaMsgs.push({role:'assistant',content:t});
-  }catch(e){ bubble.textContent='出错：'+e.message; bubble.style.background='var(--danger-bg)'; bubble.style.color='var(--danger)'; }
+    bubble.textContent=t;qaMsgs.push({role:'assistant',content:t});
+  }catch(e){bubble.textContent='出错：'+e.message;bubble.style.background='var(--danger-bg)';bubble.style.color='var(--danger)';}
   wrap.scrollTop=wrap.scrollHeight;
 }
-
-function qQ(q){ document.getElementById('qa-in').value=q; sendQA(); }
+function qQ(q){document.getElementById('qa-in').value=q;sendQA();}
 </script>
 </body>
 </html>
